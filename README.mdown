@@ -18,7 +18,7 @@ Note: 3200 tweets is Twitter's limit. There's also a sixty second pause between 
 
 Depends on the Twitter gem.
 
-				gem install Twitter
+				gem install twitter
 
 Run the script using:
 
