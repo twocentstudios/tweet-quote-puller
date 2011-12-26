@@ -1,0 +1,26 @@
+# Introduction
+
+This is a quick Ruby script I wrote to help a friend of mine migrate some of his tweets to Tumblr. 
+
+He used to post movie/music/tv reviews to Twitter, but decided to move them to Tumblr and didn't want to have to search manually for them.
+
+# What It Does
+
+This script will print the last 3200 tweets of a Twitter user that match the regular expression "*" (basically any tweet that has text inside quotes). It would be easy to extend to add the regex as a command line input.
+
+After pulling all the tweets and dates. It prints them to a text file called output.txt in the current directory in the format:
+				
+				Tweet text is first. This is it.
+				2011-12-25 11:54:28 -0600
+				<new line>
+
+Note: 3200 tweets is Twitter's limit. There's also a sixty second pause between calls to fulfill rate limiting.
+
+Depends on the Twitter gem.
+
+				gem install Twitter
+
+Run the script using:
+
+				ruby tweet-quote-puller.rb twitter-username
+
